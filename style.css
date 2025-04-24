@@ -58,7 +58,6 @@ section:not(:last-of-type) {
 
 .card {
   box-shadow: var(--shadow);
-  border-radius: 5px;
 }
 
 .about-card {
@@ -103,7 +102,7 @@ section:not(:last-of-type) {
 
 .project-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(600px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
   gap: 50px;
 }
 
@@ -170,6 +169,7 @@ section:not(:last-of-type) {
 .contact {
   background-color: var(--bg-accent-color);
   display: flex;
+  gap: 15px;
   justify-content: space-between;
 }
 
@@ -192,4 +192,16 @@ section:not(:last-of-type) {
 .contact-tel,
 .contact-mail {
   font-size: 2em;
+}
+
+@media (max-width: 1000px) {
+  .about,
+  .contact {
+    flex-direction: column;
+  }
+
+  .img-container,
+  .contact .img-container {
+    max-width: 100%;
+  }
 }
