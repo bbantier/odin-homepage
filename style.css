@@ -1,3 +1,59 @@
+@import url("https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
+
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --title-font: "Playfair Display", serif;
+  --normal-font: "Roboto", "Tahoma", sans-serif;
+}
+
+body {
+  padding: 50px 70px;
+}
+
+.title {
+  font-family: var(--title-font);
+  font-weight: normal;
+}
+
+.normal {
+  font-family: var(--normal-font);
+}
+
+.about {
+  display: flex;
+}
+
+.card {
+  box-shadow: 5px 5px 10px #afafaf;
+}
+
+.about-card {
+  margin: 50px 0;
+  padding: 25px 50px;
+}
+
+.about-title {
+  font-size: 3em;
+  margin-bottom: 1em;
+}
+
+.about-text {
+  font-size: 2em;
+}
+
+.img-container {
+  max-width: 30%;
+  position: relative;
+}
+
 .profile-picture {
+  width: 100%;
   object-fit: cover;
 }
