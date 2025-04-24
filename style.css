@@ -12,6 +12,12 @@
   --title-font: "Playfair Display", serif;
   --normal-font: "Roboto", "Tahoma", sans-serif;
   --bg-accent-color: #428eaf;
+  --red: #912b21;
+  --mauve: #7e75c5;
+  --green: #678e53;
+  --pink: #b869b1;
+  --orange: #cd9347;
+  --blue: #64a0ce;
 }
 
 section {
@@ -83,7 +89,36 @@ section {
 }
 
 .img-placeholder {
+  padding: 20%;
   height: 400px;
+  font-size: 3em;
+  font-family: var(--title-font);
+  text-align: center;
+  color: white;
+}
+
+.red {
+  background-color: var(--red);
+}
+
+.mauve {
+  background-color: var(--mauve);
+}
+
+.green {
+  background-color: var(--green);
+}
+
+.pink {
+  background-color: var(--pink);
+}
+
+.orange {
+  background-color: var(--orange);
+}
+
+.blue {
+  background-color: var(--blue);
 }
 
 .project-content {
