@@ -22,7 +22,6 @@ section {
 
 .title {
   font-family: var(--title-font);
-  font-size: 3em;
   font-weight: normal;
 }
 
@@ -46,7 +45,7 @@ section {
 }
 
 .card {
-  box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5);
+  box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.4);
 }
 
 .about-card {
@@ -55,7 +54,9 @@ section {
   padding: 25px 50px;
 }
 
-.about-title {
+.about-title,
+.work-title {
+  font-size: 3em;
   margin-bottom: 1em;
 }
 
@@ -73,4 +74,22 @@ section {
   height: 100%;
   object-fit: cover;
   object-position: center;
+}
+
+.project-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(500px, 1fr));
+  gap: 35px;
+}
+
+.img-placeholder {
+  height: 400px;
+}
+
+.project-content {
+  padding: 15px;
+}
+
+.project-content-upper {
+  margin-bottom: 15px;
 }
