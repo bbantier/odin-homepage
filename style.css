@@ -21,7 +21,7 @@
 }
 
 section {
-  padding: 50px 70px;
+  padding: 50px 100px;
   position: relative;
   margin-bottom: 100px;
 }
@@ -82,10 +82,21 @@ section {
   object-position: center;
 }
 
+.name-title {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  font-size: 4em;
+  margin-inline: auto;
+  width: fit-content;
+  color: white;
+}
+
 .project-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(500px, 1fr));
-  gap: 35px;
+  grid-template-columns: repeat(auto-fit, minmax(600px, 1fr));
+  gap: 50px;
 }
 
 .img-placeholder {
@@ -122,9 +133,28 @@ section {
 }
 
 .project-content {
-  padding: 15px;
+  padding: 15px 25px 100px;
 }
 
 .project-content-upper {
   margin-bottom: 15px;
+}
+
+.project-title {
+  font-size: 1.6em;
+}
+
+.project-text {
+  font-size: 1.3em;
+}
+
+.about-links {
+  margin-top: 40px;
+  display: flex;
+  gap: 15px;
+  justify-content: flex-end;
+}
+
+.link-logo {
+  width: 64px;
 }
