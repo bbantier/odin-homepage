@@ -38,6 +38,7 @@ section {
 
 .about {
   display: flex;
+  overflow-x: clip;
 }
 
 .background {
@@ -54,6 +55,7 @@ section {
 
 .card {
   box-shadow: var(--shadow);
+  border-radius: 5px;
 }
 
 .about-card {
@@ -159,4 +161,8 @@ section {
 
 .link-logo {
   width: 64px;
+}
+
+.contact {
+  background-color: var(--bg-accent-color);
 }
