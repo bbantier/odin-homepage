@@ -12,6 +12,7 @@
   --title-font: "Playfair Display", serif;
   --normal-font: "Roboto", "Tahoma", sans-serif;
   --bg-accent-color: #428eaf;
+  --shadow: 5px 5px 10px rgba(0, 0, 0, 0.4);
   --red: #912b21;
   --mauve: #7e75c5;
   --green: #678e53;
@@ -48,10 +49,11 @@ section {
   left: 0;
   z-index: -1;
   transform: translate(-200px, -450px) rotate(-10deg);
+  box-shadow: var(--shadow);
 }
 
 .card {
-  box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.4);
+  box-shadow: var(--shadow);
 }
 
 .about-card {
